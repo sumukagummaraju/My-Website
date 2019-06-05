@@ -1,0 +1,7 @@
+git config --global user.email
+
+git config --global user.name
+
+python manage.py migrate
+
+python manage.py createsuperuser
