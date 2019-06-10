@@ -1,10 +1,52 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+{% extends 'mysite/base.html' %}
+{% load static %}
 
-</body>
-</html>
+{% block content %}
+
+    <br>
+
+    <div class="wrapper">
+        <section id='Para1'>
+            <h2 align="center">Welcome to my Website</h2>
+
+            <div class="row">
+
+                <div class="col-8">
+
+                    <p>I'm Sumuka Gummaraju, a self learner in the
+                        field of Computer Science. I'm currently pursuing my Master's Studies at SRH Hochschule
+                        Heidelberg. I'm also looking for working student and internship opportunities in the field of Data Science and Analytics, and a
+                        machine learning enthusiast.
+                         <br>Feel free to navigate through the page, and get to know me better. Provided on the top-right are
+                        my social media links that directs you directly to my profile, in case you want to get in touch
+                        with me.
+
+                    </p>
+
+
+                </div>
+
+                <div class="col-4">
+
+                    <img src=" {% static 'mysite/images/profile.jpg' %}" alt="" height="100%" width="100%">
+                </div>
+            </div>
+
+
+        </section>
+
+        <section id='Para2'>
+            <h2 align="center">What I do?</h2>
+
+            <p>I moved to Heidelberg in October 2018. I currently work at Geomer GmbH, developing python
+                scripts and also develop complex data models. <br>
+                Apart from my university work, I believe in keeping myself busy by studying new technology, and believe
+                in the concept of "Learn by doing". This website was created as a small project in my leisure time to keep
+                myself going with Django, HTML, CSS Java Script and ChartJs.
+                <br>
+                Read more on my Portfolio page <a href="{% url 'portfolio' %}">here</a>
+            </p>
+        </section>
+    </div>
+
+{% endblock %}

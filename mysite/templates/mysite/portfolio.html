@@ -1,10 +1,340 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+{% extends 'mysite/base.html' %}
+{% load static %}
 
-</body>
-</html>
+{% block content %}
+
+    <br>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <nav id="navbar-example3" class="navbar navbar-light bg-light">
+                    <a class="navbar-brand" href="#"></a>
+                    <nav class="nav nav-pills flex-column">
+                        <a class="nav-link" href="#item-1">Work Experience</a>
+                        <nav class="nav nav-pills flex-column">
+                            <a class="nav-link ml-3 my-1" href="#item-1-1">- Working Student</a>
+                            <a class="nav-link ml-3 my-1" href="#item-1-2">- Intern</a>
+                        </nav>
+                        <a class="nav-link" href="#item-2">Education</a>
+                        <nav class="nav nav-pills flex-column">
+                            <a class="nav-link ml-3 my-1" href="#item-2-1">- Masters</a>
+                            <a class="nav-link ml-3 my-1" href="#item-2-2">- Bachelors</a>
+                        </nav>
+                        <a class="nav-link" href="#item-3">Skillsets</a>
+                        <nav class="nav nav-pills flex-column">
+                            <a class="nav-link ml-3 my-1" href="#item-3-1">- Technical</a>
+                            <a class="nav-link ml-3 my-1" href="#item-3-2">- Non Technical</a>
+                            <a class="nav-link ml-3 my-1" href="#item-3-3">- Language</a>
+                        </nav>
+                        <a class="nav-link" href="#item-4">Apart from Academics</a>
+                        <nav class="nav nav-pills flex-column">
+                            <a class="nav-link ml-3 my-1" href="#item-4-1">- Table Tennis</a>
+                            <a class="nav-link ml-3 my-1" href="#item-4-2">- Editor</a>
+                        </nav>
+                    </nav>
+                </nav>
+
+            </div>
+
+
+            <div class="col-md-9">
+                <div class="wrapper">
+                    <section id='Para1'>
+                        <div data-spy="scroll" data-target="#navbar-example3" data-offset="0">
+                            <h4 id="item-1">Work Experience</h4>
+                            <p>
+                                Carrying a fresh mind in the field of computer science. I love to work with new
+                                technologies based on Data Science and Analytics.
+                                Following are my work experiences.
+                            </p>
+                            <h5 id="item-1-1">Working Student - Geomer Gmbh, Heidelberg</h5>
+                            <p align="left">
+                                Duration : Feb ‘19 - Present
+                                 <ul>
+                                <li>Cleaned, analysed and developed data models for traffic, weather data</li>
+                                <li>Queries to extract relevant information with RDBMS – Postgres
+                                </li>
+                                <li>Developed python scripts to automate processes to download Traffic and weather data
+                                    from local as well as remote FTP Servers.
+                                </li>
+                                <li>Tools : PostgreSQL, PyCharm, Python</li>
+                            </ul>
+                            </p>
+
+                            <h5 id="item-1-2" >Intern - Prasara Innotech Pvt. Ltd, Bangalore</h5>
+                                <p align="left">
+                                    Duration : Aug 2017 - Sep 2017
+
+                                    <ul>
+                                        <li>Worked on Django Framework to develop models and application logic for Inventory
+                                            management system.
+                                        </li>
+                                        <li>Tools : MySQL, Django(Python web framework), HTML, CSS, JavaScript</li>
+                                    </ul>
+                                </p>
+
+
+                        </div>
+                    </section>
+
+                    <section id='Para2'>
+                        <div data-spy="scroll" data-target="#navbar-example3" data-offset="0">
+                            <h4 id="item-2">Education</h4>
+                            <p>
+
+                            </p>
+                            <h5 id="item-2-1">Masters, Applied Computer Science</h5>
+                            <h6>SRH Hochschule, Heidelberg</h6>
+                            <p align="left">
+                                Duration : Oct 2018 - Present
+                            </p>
+                            <ul>
+                                <li>Editor for Wir-online University magazine</li>
+                                <li> Designed a Personal Website (insert link here)</li>
+                            </ul>
+
+                            </p>
+                            <h5 id="item-2-2">Bachelors, Computer Science</h5>
+                            <h6>BNM Institute of Technology, under Visvevaraya Technological University</h6>
+                            <p align="left">
+                                Duration : Aug 2014 - July 2018
+                            </p>
+                            <ul>
+                                <li>Presented technical seminars on ,, Supply chain network on cloud manufacturing
+                                    environment using collective intelligence and Q-learning ’’
+                                    <a href="{% static 'mysite/images/Technical Seminar Sumuka.pdf' %}" target="_blank">(download
+                                        paper)</a>
+                                <li>Secured second Place in IEEE technical Quiz competition</li>
+                                <li>Chief Editor for computer science department newsletter ,, SHELL ’’</li>
+                                <li>Sports Ambassador for the year 2017-18</li>
+                                </li>
+                                <li>Tools : MySQL, Django(Python web framework)</li>
+                            </ul>
+                        </div>
+                    </section>
+
+                    <section id='Para3'>
+                        <h4 id="item-3">Skillsets</h4>
+
+
+                        <p>
+                            I have described my skillsets in the form of graphs, which are easier to understand
+                        </p>
+                        <h5 id="item-3-1">Technical Skills</h5>
+                        <div class="column" align="center">
+                            <canvas id="TechnicalChart" width = "350px" height = "250px" ></canvas>
+                        </div>
+
+
+                        </p>
+                        <h5 id="item-3-2">Non Technical Skills</h5>
+                        <br>
+                        <div class="column" align="center">
+                            <canvas id="NonTechnicalChart" width="650px" height="300px"></canvas>
+                        </div>
+
+                        <br>
+                        <h5 id="item-3-3">Language Skills</h5>
+                        <br>
+                        <div class="column" align="center">
+                            <canvas id="LanguageChart" width="650px" height="300px"></canvas>
+                        </div>
+
+                        <div>
+
+                        </div>
+
+
+                    </section>
+
+                    <section id='Para4'>
+                        <div data-spy="scroll" data-target="#navbar-example3" data-offset="0">
+                            <h4 id="item-4">Extra-curricular Activities</h4>
+                            <p>
+                                Apart from my studies, I also enjoy taking part in a lot of sporting activities such as
+                                table tennis, Badminton and Jogging.
+                                These activities relax my mind. I also have trained in Indian Classical Music.
+                            </p>
+                            <h5 id="item-4-1">Table Tennis</h5>
+
+                            <ul>
+                                <li>Won various events at the University and State Level (Karnataka)</li>
+                                <li>Represent TSG 1878 Heidelberg in 2nd League, Baden Württemberg <a
+                                        href="https://www.mytischtennis.de/clicktt/BaTTV/18-19/spieler/237079/spielerportrait"
+                                        target="_blank">Profile</a></li>
+                                <li>Awarded BNM Sports Ambassador for the year 2017-18</li>
+
+                            </ul>
+
+                            </p>
+
+                            <h5 id="item-4-2">Content Writing</h5>
+                            Here are some of my writings
+
+                            <ul>
+                                <li>Heidelberg at First sight - An article I wrote for the University Magazine in
+                                    December 2019 <br> <a href="https://wir-online.news/heidelberg-at-first-sight/"
+                                                          target="_blank">Read more...</a></li>
+                                <li>The AI Takeover <br> <a href="{% static 'mysite/images/7SemNewsletter.pdf' %}"
+                                                            target="_blank">Read more...</a></li>
+
+                                <li>Depth Sense Imaging System <br> <a
+                                        href="{% static 'mysite/images/8SemNewsletter.pdf' %}" target="_blank">Read
+                                    more...</a></li>
+
+
+                            </ul>
+                        </div>
+                    </section>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.bundle.js"></script>
+    <script>
+
+        var ctx = document.getElementById('TechnicalChart');
+        var TechnicalChart = new Chart(ctx, {
+            type: 'radar',
+            data: {
+                labels: ['Python', ['Databases and Querying'], ['HTML,CSS,Javascript'], ['Web Scraping'], ['Machine Learning']],
+                datasets: [{
+                    label: 'Now',
+                    backgroundColor: ['rgba(54, 162, 235, 0.2)'],
+                    borderColor: ['rgba(54, 162, 235, 1)'],
+                    data: [6, 7, 7, 4, 3]
+                },
+                    {
+                        label: 'My Aim in 1 Year',
+                        backgroundColor: ['rgba(255, 99, 132, 0.2)',],
+                        borderColor: ['rgba(255, 99, 132, 1)'],
+                        data: [10, 9, 8, 8, 9]
+                    }]
+            },
+            options: {
+                legend: {
+                    position: 'top',
+                },
+                title: {
+                    display: false,
+                    text: 'Technical Skills'
+                },
+                scale: {
+                    ticks: {
+                        beginAtZero: true
+                    }
+                }
+            }
+        });
+
+
+        var ctx = document.getElementById('NonTechnicalChart');
+        var NonTechnicalChart = new Chart(ctx, {
+            type: 'horizontalBar',
+            data: {
+                labels: [['Data','Visualization'], ['Content','Writing'], 'Communication ', ['Organizational','Capabilities'], ['Urge to','learn']],
+                datasets: [{
+                    label: 'Non-Technical Skills',
+                    data: [7, 10, 9, 9, 8],
+                    backgroundColor: [
+                        'rgba(255, 99, 132, 0.2)',
+                        'rgba(54, 162, 235, 0.2)',
+                        'rgba(255, 206, 86, 0.2)',
+                        'rgba(75, 192, 192, 0.2)',
+                        'rgba(153, 102, 255, 0.2)',
+                        'rgba(255, 159, 64, 0.2)'
+                    ],
+                    borderColor: [
+                        'rgba(255, 99, 132, 1)',
+                        'rgba(54, 162, 235, 1)',
+                        'rgba(255, 206, 86, 1)',
+                        'rgba(75, 192, 192, 1)',
+                        'rgba(153, 102, 255, 1)',
+                        'rgba(255, 159, 64, 1)'
+                    ],
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                legend:
+                    {
+                        display:false,
+                    },
+                title: {
+                    display: false,
+                    text: 'Non-Technical'
+                },
+                responsive: false,
+                scales: {
+
+                    xAxes: [{
+                        maxBarThickness: 100,
+                        ticks: {
+                            beginAtZero: true,
+                            suggestedMax: 10
+                        }
+                    }]
+                }
+            }
+        });
+
+        var ctx = document.getElementById('LanguageChart');
+        var LanguageChart = new Chart(ctx, {
+            type: 'horizontalBar',
+            data: {
+                labels: ['English', 'Deutsch', 'Telugu', 'Kannada', 'Hindi', 'Tamil'],
+                datasets: [{
+                    label: 'Language Fluency',
+                    data: [9, 6, 8, 8, 8, 7],
+                    backgroundColor: [
+                        'rgba(255, 99, 132, 0.2)',
+                        'rgba(54, 162, 235, 0.2)',
+                        'rgba(255, 206, 86, 0.2)',
+                        'rgba(75, 192, 192, 0.2)',
+                        'rgba(153, 102, 255, 0.2)',
+                        'rgba(255, 159, 64, 0.2)'
+                    ],
+                    borderColor: [
+                        'rgba(255, 99, 132, 1)',
+                        'rgba(54, 162, 235, 1)',
+                        'rgba(255, 206, 86, 1)',
+                        'rgba(75, 192, 192, 1)',
+                        'rgba(153, 102, 255, 1)',
+                        'rgba(255, 159, 64, 1)'
+                    ],
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                legend:
+                    {
+                        display:false,
+                    },
+                responsive: false,
+                scales: {
+
+                    xAxes: [{
+                        ticks: {
+                            beginAtZero: true,
+                            suggestedMax: 10
+                        }
+                    }],
+                    yAxes: [{
+                        ticks: {
+                            beginAtZero: true,
+                            barPercentage: 1
+                        }
+                    }]
+                }
+            }
+        });
+    </script>
+{% endblock %}
+
+
+
+
+
