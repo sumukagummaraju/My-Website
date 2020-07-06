@@ -1,6 +1,6 @@
 body {
   background-color: #ecf0f1;
-  font-family: Ubuntu;
+  font-family: "Calibri";
   font-size: 16px;
 }
 
@@ -31,7 +31,7 @@ p {
 
 h2 {
   font-size: 34px;
-  text-transform: uppercase;
+  text-transform: none;
   font-weight: 100;
   line-height: 2;
   color: #2c3e50;
@@ -44,5 +44,8 @@ h2 {
     -ms-transform: rotate(90deg);
     transform: rotate(90deg);
 }
+
+
+
 
 
