@@ -20,23 +20,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1558b2db-9441-4821-9513-414089580c88" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/mysite/static/mysite/images/g1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mysite/static/mysite/images/g10.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mysite/static/mysite/images/g2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mysite/static/mysite/images/g3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mysite/static/mysite/images/g4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mysite/static/mysite/images/g5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mysite/static/mysite/images/g6.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mysite/static/mysite/images/g7.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mysite/static/mysite/images/g8.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mysite/static/mysite/images/g9.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysite/static/mysite/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/static/mysite/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysite/templates/mysite/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/templates/mysite/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysite/templates/mysite/contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/templates/mysite/contact.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysite/templates/mysite/gallery.html" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/templates/mysite/gallery.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysite/templates/mysite/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/templates/mysite/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysite/templates/mysite/portfolio.html" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/templates/mysite/portfolio.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -124,7 +108,7 @@
       <workItem from="1559729401983" duration="24710000" />
       <workItem from="1560060594585" duration="27250000" />
       <workItem from="1593697127839" duration="19968000" />
-      <workItem from="1594034913982" duration="3385000" />
+      <workItem from="1594034913982" duration="4498000" />
     </task>
     <servers />
   </component>
